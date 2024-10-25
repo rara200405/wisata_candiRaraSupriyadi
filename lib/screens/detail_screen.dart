@@ -34,7 +34,9 @@ class DetailScreen extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   child: IconButton(
-                      onPressed: () {}, icon: const Icon(Icons.arrow_back)),
+                      onPressed: () {},
+                      icon: const Icon(
+                          Icons.arrow_back)),
                 ),
               )
             ],
@@ -131,7 +133,23 @@ class DetailScreen extends StatelessWidget {
                 const SizedBox(
                   height: 16,
                 ),
+            Container(
+              child: Column(
+                  children: [
+              Row(
+              children: [
+              Text("Deskripsi",style: TextStyle(fontWeight: FontWeight.bold)),
               ],
+            ),
+            Container(
+              child: Text("")
+              )
+              ],
+            ),
+          )
+        ],
+
+
             ),
           )
         ],
