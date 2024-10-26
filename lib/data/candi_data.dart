@@ -1,4 +1,4 @@
-import 'package:rarasupriyadi/models/candi.dart';
+import '../models/candi.dart';
 
 var candiList = [
   Candi(
