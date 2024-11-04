@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rarasupriyadi/data/candi_data.dart';
+import 'package:rarasupriyadi/screens/SignInSreen.dart';
 import 'package:rarasupriyadi/screens/detail_screen.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -15,10 +15,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Wisata Candi',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        appBarTheme: const AppBarTheme(
+          iconTheme: IconThemeData(color: Colors.deepPurple),
+          titleTextStyle: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        colorScheme:
+        ColorScheme.fromSeed(seedColor: Colors.deepPurple).copyWith(
+          primary: Colors.deepPurple,
+          surface: Colors.deepPurple[50],
+        ),
         useMaterial3: true,
       ),
-      home: DetailScreen(candi: candiList[0]),
+      home: SignInScreen(),
     );
   }
 }
