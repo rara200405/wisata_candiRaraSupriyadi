@@ -82,6 +82,10 @@ class _SignInScreenState extends State<SignInScreen> {
                   ),
                   SizedBox(height: 20),
                   // RichText for Sign Up link
+
+                  // TextButton(
+                  //    onPressed: (){},
+                  //    child: Text('belum punya akun? Daftar disini.')),
                   RichText(
                     text: TextSpan(
                       text: 'Belum Punya Akun? ',
@@ -96,6 +100,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           ),
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
+                            Navigator.pushNamed(context, '/SingUp');
                               // Handle sign-up navigation here
                             },
                         ),

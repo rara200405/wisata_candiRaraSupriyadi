@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rarasupriyadi/screens/FavoriteScreen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -13,6 +14,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
   String fullName = '';
   String userName = '';
   int favoriteCandiCount = 0;
+  late Color iconColor;
+
+  void SingIn (){
+    // setState(() {
+    // isSignedIn = true;
+    // userName = 'budi';
+    // fullName = ' Budi Santoso' ;
+    // FavoriteCandiCount = 3,
+    // });
+    Navigator.pushNamed(context, '/Singin');
+  }
 
   @override
   Widget build(BuildContext context) {
